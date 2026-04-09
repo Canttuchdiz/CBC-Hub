@@ -17,15 +17,15 @@ struct ContentView: View {
 
             BoatBoard()
                 .tabItem {
-                    Label("Boats", systemImage: "anchor")
+                    Label("Boats", systemImage: "ferry.fill")
                 }
 
-            Text("Log")
+            ErgLog()
                 .tabItem {
                     Label("Log", systemImage: "chart.bar")
                 }
 
-            Text("Schedule")
+            ScheduleView()
                 .tabItem {
                     Label("Schedule", systemImage: "calendar")
                 }
