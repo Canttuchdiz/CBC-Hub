@@ -9,7 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        RowerHome()
+        TabView {
+            RowerHome()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+
+            BoatBoard()
+                .tabItem {
+                    Label("Boats", systemImage: "anchor")
+                }
+
+            Text("Log")
+                .tabItem {
+                    Label("Log", systemImage: "chart.bar")
+                }
+
+            Text("Schedule")
+                .tabItem {
+                    Label("Schedule", systemImage: "calendar")
+                }
+
+            Text("More")
+                .tabItem {
+                    Label("More", systemImage: "ellipsis")
+                }
+        }
+        .tint(Color(hex: "15803d"))
     }
 }
 
